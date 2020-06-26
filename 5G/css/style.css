@@ -1,0 +1,701 @@
+* {
+				margin: 0 0;
+				padding: 0 0;
+			}
+			
+			ul li {
+				list-style-type: none;
+			}
+			
+			a {
+				text-decoration: none;
+			}
+			
+			body {
+				font-family: "微软雅黑";
+			}
+			
+			/*头部*/
+			.top{
+				width: 100%;
+				height: 150px;
+				min-width: 1000px;
+				background-color:#1269BD;
+			}
+			.header2{
+				position: absolute;
+				top: 20px;
+				left: 17%;
+			}
+			.header3{
+				position: absolute;
+				top: 40px;
+				width: 100px;
+				height: 70px;
+				right: 16%;
+			}
+			.header4{
+				position: absolute;
+				right: 0px;
+			}
+			
+			/*导航栏*/
+			.nav{
+				width: 100%;
+				height: 50px;
+				min-width: 1000px;
+				background-color:#2196F3;
+			}
+			.nav_font{
+				width: 70%;
+				min-width: 1000px;
+				height: 50px;
+				margin: 0 auto;
+				line-height: 50px;
+				text-align: center;
+			}
+			.nav_font>ul>li{
+				width: 10%;
+				float: left;				
+			}
+			.nav_font>ul>li a{
+				color: #fff;
+				font-size: 18px;
+			}
+			.nav_font>ul>li:hover {
+				background-color:#FD4D40;
+			}
+			
+			
+			
+			/*轮播图*/
+			html, body {
+		      	position: relative;
+		      	height: 100%;
+		    }
+		    body {
+		     	background: #eee;
+		        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+		        font-size: 14px;
+		      	color:#000;
+		      	margin: 0;
+		      	padding: 0;
+		    }
+		    .swiper-container {
+		      	width: 100%;
+		      	height: 500px;
+		      	min-width: 1000px;
+		      	position: relative;
+		    }
+		    .swiper-slide {
+			    background: #fff;			
+			      /* Center slide text vertically */
+			    display: -webkit-box;
+			    display: -ms-flexbox;
+			    display: -webkit-flex;
+			    display: flex;
+			    -webkit-box-pack: center;
+			    -ms-flex-pack: center;
+			    -webkit-justify-content: center;
+	            justify-content: center;
+		        -webkit-box-align: center;			      -ms-flex-align: center;
+			    -webkit-align-items: center;
+			   align-items: center;
+		    }
+		    
+		    .swiper-slide img{
+		    	width: 100%;
+		    	height: 100%;		    	
+		    }
+		    .swiper_1{
+		    	width: 65%;
+		    	height: 450px;
+		    	position: absolute;
+		    	left: 22.5%;
+		    	bottom: 0px;		    	
+		    }
+		    .sw_1{
+		    	width: 49%;
+		    	height: 450px;
+		    	margin-right: 10px;
+		    	float: left;
+		    }
+		    .sw_1 img{
+		    	width: 100%;
+		    	height: 100%;
+		    }
+		    .sw_2{
+		    	width: 49%;
+		    	height: 450px;
+		    	float: right;
+		    }
+		    .si_wz{
+		    	color: #FFFFFF;
+		    	font-size: 32px;
+		    	text-align: center;
+		    	text-shadow: 0 1px 0 #999, 0 2px 0 #18a7d2, 0 3px 0 #11e0e0, 0 4px 0 #19ace4, 0 5px 0 #0e75e0, 0 6px 0 #1f60d8, 0 7px 0 #1154a9, 0 8px 7px #1169bd;
+		    }
+		    .sw_wz{
+		    	color: #FFFFFF;
+		    	font-size: 18px;
+		    	padding-top: 20px;
+		    	text-indent: 2em;
+		    	text-shadow: 0 0 0 #ccc, 0 0 0 #ccc, 0 0 0 #444, 0 0 0 #444, 0 0 0 #444, 1px 1px 1px #444;
+		    }
+		    .lj{
+		    	width: 200px;
+		    	height: 50px;
+		    	background: rgba(255,255,255,0.4);
+		    	line-height: 50px;
+		    	text-align: center;
+		    	font-size: 16px;
+		    	border: 2px solid white;
+		    	text-shadow: 0 0 0 #ccc, 0 0 0 #ccc, 0 0 0 #444, 0 0 0 #444, 0 0 0 #444, 1px 1px 1px #444;
+		    }
+		    .lj a{
+		    	color: #fff;
+		    }
+		    
+		    
+		    
+		   		    
+		    .main{
+		    	width: 100%;
+		    	min-width: 1000px;
+		    	height: 150px;
+		    	background-color: #49CCF3;
+		    }
+		    .main_lcr{
+		    	width: 68%;
+		    	margin: 0 auto;
+		    	min-width: 1000px;
+		    	height: 150px;		    	
+		    }
+		    .main_l{
+		    	width: 33.1%;
+		    	height: 150px;
+		    	float: left;
+		    	padding-right:0.2%;		    	
+		    }
+		    .G_l{
+		    	width: 35%;
+		    	height: 150px;
+		    	float: left;
+		    }
+		    .G_r{
+		    	width: 65%;
+		    	height: 150px;
+		    	float: right;
+		    }
+		    
+		    
+		    
+		    /*内容*/
+		    .content{
+		    	width: 100%;
+		    	height: 4600px;
+		    	min-width: 1000px;
+		    	border: 1px solid black;
+		    	background: url(../img/imgs/tssssstts.0be9139.jpg);
+		    }
+		    .content_1{
+		    	width: 65%;
+		    	margin: 0 auto;
+		    	height: 450px;
+		    	min-width: 1000px;
+		    }
+		    .c_top{
+		    	width: 100%;
+		    	height: 60px;
+		    	padding-top: 30px;
+		    }
+		    .log_1{
+		    	width: 30%;
+		    	height: 50px;
+		    	float: left;
+		    }
+		    .font_1{
+		    	width: 40%;
+		    	float: left;
+		    	margin-top: 6px;
+		    	height: 36px;
+		    	background: #0C2F6C;
+		    	border-top: 1px solid #30B1E6;
+		    	border-bottom: 1px solid #30B1E6;
+		    	line-height: 36px;
+		    	color: #fff;
+		    	font-size: 25px;
+		    	text-align: center;
+		    }
+		    .log_2{
+		    	width: 30%;
+		    	height: 50px;
+		    	float: right;
+		    }
+		    .font_2{
+		    	width: 100%;
+		    	height: 30px;
+		    	text-align: center;
+		    	line-height: 30px;
+		    	color: #fff;
+		    	font-size: 16px;
+		    }
+		    .con_1{
+		    	widows: 100%;
+		    	height: 320px;
+		    	border: 1px solid #8FBC8Fs;
+		    }
+		    .con_1_nav1{
+		    	width: 20%;
+		    	float: left;
+		    	height: 320px;
+		    }
+		    .con_1_nav1>ul>li{
+		    	width: 96%;
+		    	height: 60px;
+		    	margin-left: 2%;
+		    	line-height: 60px;
+		    	margin-bottom: 5px;
+		    	background: #13B5E6 ;
+		    }
+		    .con_1_nav1>ul>li a{
+		    	font-size: 16px;
+		    	color: #fff;
+		    	padding-left: 12px;
+		    }
+		     .con_1_nav1>ul>li:hover{
+		    	color: #fff;
+		    }
+		    .con_1_nav1>ul>li:hover {
+		    	/*border-radius: 15px; 
+		    	corner-shape: bevel;*/
+		    	background: linear-gradient(-45deg, transparent 16px, #fff 0), 
+		    	            linear-gradient(45deg, transparent 16px, #13B5E6 0);
+			}
+			
+			.con_1_nav1>ul>li:hover a {
+				color: #2196F3;
+			}
+		    .con_1_nav2{
+		    	width: 60%;
+		    	height: 320px;
+		    	float: left;
+		    	background: url(../img/imgs/kuan.123f0ab.png);
+		    	background-size:100% 100%;
+		    }
+		    .con_1_nav3{
+		    	width: 20%;
+		    	height: 320px;
+		    	float: right;
+		    }
+		    .con_1_nav3>ul>li{
+		    	width: 96%;
+		    	height: 60px;
+		    	margin-left: 2%;
+		    	line-height: 60px;
+		    	margin-bottom: 5px;
+		    	background: #13B5E6 ;
+		    }
+		    .con_1_nav3>ul>li a{
+		    	font-size: 16px;
+		    	color: #fff;
+		    	padding-left: 12px;		    
+		    }
+		     .con_1_nav3>ul>li:hover {
+				background: linear-gradient(-45deg, transparent 16px, #fff 0), 
+		    	            linear-gradient(45deg, transparent 16px, #13B5E6 0);
+
+			}			
+			.con_1_nav3>ul>li:hover a {
+				color: #2196F3;
+			}
+		    
+		    
+		    
+		    /*内容二*/		   		    
+		    .content_2{
+		    	width: 65%;
+		    	margin: 0 auto;
+		    	height: 826px;
+		    	min-width: 1000px;
+		    }
+		    .con_2{
+		    	width: 100%;
+		    	height:300px;
+		    	margin-top: 18px;
+		    }
+		    .con_22{
+		    	width: 100%;
+		    	height:300px;
+		    	margin-top: 18px;
+		    }
+		    .con_aa{
+		    	width: 32%;
+		    	height: 300px;
+		    	float: left;
+		    	margin-right: 2%;
+		    	position: relative;
+		    }
+		    .con_aa img{
+		    	width: 100%;
+		    	height: 100%;		    	
+		    }
+		    .ye{
+		      	width: 100%;
+				height: 300px;
+				float: left;
+				margin-right: 2%;
+				color: white;
+				font-size: 16px;
+				text-indent: 2em;
+				position: fixed;
+				top: 0px;
+				bottom: 285px;
+				display: none;
+				z-index: 999;
+		      } 
+		    .ye p{
+		      	margin: 15% 5% 0px 5%;
+		      }  
+		    .con_aa:hover div{
+				display: none;
+			  }
+		    .con_aa:hover .ye{
+				display: inherit;
+				background-color: #349adb;
+				opacity: 0.9;
+			  }   	
+  
+		    .con_bb{
+		    	width: 100%;
+		    	height: 90px;
+		    	background:rgba(52,154,219,.3);
+		    	position: absolute;
+		    	bottom: 0px;
+		    }
+		    .st{
+		    	color: #fff;
+		    	font-size: 20px;
+		    	margin-top: 14px;
+		    	text-indent: 1em;
+		    }
+		    .le{
+		    	color: #fff;
+		    	font-size: 14px;
+		    	margin-top: 8px;
+		    	text-indent: 3em;
+		    }
+		    
+		    
+		   /* 内容三*/
+		    .content_3{
+		    	width: 65%;
+		    	margin: 0 auto;
+		    	height: 552px;
+		    	min-width: 1000px;
+		    }
+		    .font_3{
+		    	width: 100%;
+		    	height: 50px;
+		    	text-align: center;
+		    	color: #fff;
+		    	font-size: 16px;
+		    }
+		    .con_3{
+		    	width: 100%;
+		    	height: 390px;
+		    	margin-top: 14px;
+		    }
+		    .con_33{
+		    	width: 17%;
+		    	height: 390px;
+		    	float: left;		    	
+		    	margin-left: 25px;
+		    	border-right: 1px solid white;
+		    }
+		    .con_33>ul>li{
+		    	width: 100%;
+		    	height: 77px;
+		    	line-height: 77px;
+		    	text-align: center;
+		    }
+		    .con_33>ul>li a{
+		    	color: #fff;
+		    	font-size: 18px;
+		    }
+		    .con_333{
+		    	width: 78.8%;
+		    	height: 390px;
+		    	float: right;
+		    	background: url(../img/imgs/bjkang.6c50260.jpg);
+		    }
+		    .con_333_l{
+		    	width: 30%;
+		    	height: 250px;
+		    	float: left;
+		    	margin: 65px 0px 0px 40px;
+		    	border: 0px solid white;
+		    	border-radius: 50%;
+		    }
+		    .con_333_l img{
+		    	width: 100%;
+		    	height: 100%;
+		    	border-radius: 50%;
+		    }
+		    .con_333_r{
+		    	width: 60%;
+		    	height: 350px;
+		    	float: right;
+		    	margin-right: 25px;
+		    	margin-top: 15px;
+		    }
+		    .qh{
+		    	color: #fff;
+		    	font-size: 22px;
+		    	text-align: center;
+		    	margin: 10px 0px;
+		    }
+		    .wz{
+		    	color: #fff;
+		    	font-size: 14px;
+		    	text-indent: 2em;
+		    	margin-bottom: 8px;
+		    }
+		    
+		    
+		    /*内容四*/
+		    .content_4{
+		    	width: 65%;
+		    	margin: 0 auto;
+		    	height: 720px;
+		    	min-width: 1000px;
+		    }
+		    .con_4{
+		    	width: 100%;
+		    	height: 265px;
+		    	margin: 16px 0px;
+		    }
+
+		    .con_44{
+		    	width: 100%;
+		    	height: 265px;
+		    }
+		    .pope_1{
+		    	width: 24%;
+		    	height: 250px;
+		    	margin-right: 13px;
+		    	float: left;
+		    	text-align: center;
+		    	background: url(../img/imgs/quan.02c77a1.png);
+		    	background-size: 100% 100%;
+		    }
+		    .pope_1 img{
+		    	width: 81%;
+		    	height: 81%;
+		    	padding-top: 23px;
+		    	border-radius: 50%;
+		    	}
+		    		   		    
+		    
+		   /* 内容五	*/	    		    
+		    .content_5{
+		    	width: 65%;
+		    	margin: 0 auto;
+		    	height: 670px;
+		    	min-width: 1000px;
+		    }
+		    .con_5{
+		    	width: 100%;
+		    	height: 500px;
+		    	margin-top: 13px;
+		    }
+		    .kj_1{
+		    	width: 32%;
+		    	height: 500px;
+		    	float: left;
+		    	margin-right: 2%;		    	
+		    }
+		    .kj_top{
+		    	width: 100%;
+		    	height: 250px;
+		    	overflow: hidden;		    	
+		    }
+		    .kj_top img{
+		    	width: 100%;
+		    	height: 100%;
+		    	border-radius: 20px 20px 0px 0px;
+		    }
+		    .kj_top img:hover{
+		    	transform: scale(1.2);
+				transition: all 1s;
+				border-radius: 20px 20px 0px 0px;
+		    }
+
+		    .kj_bott{
+		    	width: 100%;
+		    	height: 250px;
+		    	background: white;
+		    }
+		    .bt_5{
+		    	font-size: 24px;
+		    	text-align: center;
+		    	padding-top: 20px;
+		    }
+		    .wz_5{
+		    	color: #777;
+		    	text-indent: 2em;
+		    	padding-top: 8px;
+		    }
+		    .ck{
+		    	width: 30%;
+		    	height: 40px;
+		    	margin: 0 auto;
+		    	background: #fd4d40;
+		    	border: 0px solid;
+		    	border-radius: 30px 0px 30px 0px;
+		    	text-align: center;
+		    	line-height: 40px;	
+		    	margin-top: 25px;	    	
+		    }
+		    .ck a{
+		    	color: #fff;
+		    }
+		    .ck:hover{
+		    	background: #6dd642;
+				color: #fff;
+				border-radius: 0px 30px 0px 30px;
+		    }
+		    
+		    
+		    
+		    /*内容六*/
+		    .content_6{
+		    	width: 65%;
+		    	margin: 0 auto;
+		    	height: 480px;
+		    	min-width: 1000px;
+		    }
+		    .bt_6{
+		    	width: 45%;
+		    	height: 50px;
+		    	margin: 0 auto;
+		    }
+		    .bt_66{
+		    	width: 33%;
+		    	height: 50px;
+		    	float: left;
+		    	line-height: 50px;
+		    	text-align: center;
+		    	background: url(../img/imgs/anniu.4b6074f.png);
+		    	background-size: 100% 100%;
+		    }
+		    .bt_66 a{
+		    	color: #fff;
+		    	font-size: 20px;
+		    }
+		    .con_6{
+		    	width: 100%;
+		    	height: 270px;
+		    	margin-top: 10px;
+		    }
+		    .con_66{
+		    	width: 31.6%;
+		    	height: 270px;
+		    	float: left;
+		    	margin-right: 2.5%;
+		    	position: relative;
+		    }
+		    .con_66 img{
+		    	width: 100%;
+		    	height: 100%;
+		    }
+		    .con_666{
+		    	width: 100%;
+		    	height: 50px;
+		    	color: #fff;
+		    	font-size: 18px;
+		    	line-height: 50px;
+		    	text-align: center;
+		    	background:rgba(0,0,0,.5);
+		    	position: absolute;
+		    	bottom: 0px;
+		    }  	
+		    .yyc{
+		    	width: 100%;
+		    	height: 270px;
+		    	margin-right: 2.5%;
+		    	color: #fff;
+		    	position: absolute;
+		    	bottom: 0px;
+		    	z-index: 999;		    	
+		    	text-align: center;
+		    	background-color: rgba(0, 0, 0, 0.5);
+		    	display: none;
+		    }
+		    .con_66:hover div{
+		    	display: block;
+		    }
+		    .con_66:hover.yyc{
+		    	display: inherit;
+		    }
+	
+		    	
+		    		    		    				    
+		    /*内容七*/
+		    .content_7{
+		    	width: 65%;
+		    	margin: 0 auto;
+		    	height: 900px;
+		    	min-width: 1000px;
+		    	background: url(../img/imgs/bj15-1.5cd23e2.png);
+		    	background-size: 100% 100%;
+		    }
+		    .con_7{
+		    	width: 45%;
+		    	height: 200px;
+		    	float: left;
+		    	margin-top: 150px;
+		    }
+		    .con_77{
+		    	width: 37%;
+		    	height: 100px;
+		    	float: right;
+		    	margin-top: 250px;
+		    }
+		    
+		    .bottem{
+		    	width: 100%;
+		    	height: 200px;
+		    	min-width: 1000px;
+		    	background:#2196F3;
+		    }
+		    .bott_1{
+		    	width: 20%;
+		    	height: 200px;
+		    	float: left;margin-right: 8%;
+		    }
+		    .bott_2{
+			   	width: 45%;
+			   	height: 200px;
+			   	float: left;
+			   	text-align: center;
+			    color: #fff;
+			    font-size: 18px;
+		   }
+		   .bott_2 p{
+		   		padding-top: 27px;
+		   }
+		  .bott_3{
+		  	    width: 20%;
+		    	height: 200px;
+		    	float: right;
+		  }
+		  .bott_3 img{
+			  	width: 100%;
+			  	height: 100%;
+		  } 
+		  .po{
+		  	position: fixed;
+		  	bottom: 50px;
+		  	right: 100px;
+		  }
