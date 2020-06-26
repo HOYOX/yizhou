@@ -1,35 +1,608 @@
-﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>春望</title>
-</head>
+<!DOCTYPE html>
+<html>
 
-<body background="images/2-1442400293807.jpg"  style=" background-repeat:no-repeat; background-size:100% 100%; background-attachment:fixed">
-     
-     <h2 align="center">诗歌赏析</h2>
-     <hr/>
-     <p>唐玄宗天宝十五年（756）七月，安史叛军攻陷长安，肃宗在灵武即位，改元至德。杜甫在投奔灵武途中，被叛军俘至长安，次年（至德二年）写次诗。</p>
-     <p>诗人目睹沦陷后的长安之萧条零落，身历逆境思家情切，不免感慨万端。诗的一、二两联，写春城败象，饱含感慨；三、四两联写心念亲人境况，充溢离情。全诗沉着藴藉，真挚自然，反应了诗人热爱祖国，眷怀家人的感情。</p>
-     <p>诗人徐应佩、周溶泉等评价诗曰：“意脉贯通而平直，情景兼备而不游离，感情强烈而不浅露，内容丰富而不杂，格律严谨而不板滞。”此论颇为妥帖。“家书抵万金”亦为流传千古之名言。</p>
-     <hr size"8" color="#OOFFOO" width="50%" />
-     <marquee loop=3 behavior="alternate" scrollamount="25">
-     <h1 align="center" >春望</h1>
-     <h3 align="center">作者：<a href="https://baike.baidu.com/item/%E6%9D%9C%E7%94%AB/63508?fr=aladdin" target="_blank">杜甫</a></h3>
-     <p align="center">
-     <font size="44"   color="#6699CC" face="楷体">
-         国破<b>山河</b>在，城春<i>草木深</i>。</br>
-         感时花溅泪，恨别鸟<u>惊心</u>。</br>
-         烽火连三月，家书抵万金。</br>
-         白头搔更短，浑欲不胜簪。</p>
-     </font>
-   </p>
-   <h4 align="center">走五遍</h4>
-    </marquee>
-   <p align="center">
-   <img src="images/78310a55b319ebc4acda9dc68126cffc1f1716ca.jpg" alt="杜甫" height="260" width="290"/>
-   <img src="images/2-1442400293568.jpg" alt="桥" height="260" width="290"/>
-   <img src="images/2-1442400183900.jpg" alt="墙" height="260" width="290"/>
-   </p>
-</body>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/new_file.css" />
+		<link rel="stylesheet" type="text/css" href="css/swiper.min.css" />
+		<style type="text/css">
+			* {
+				margin: 0 0;
+				padding: 0 0;
+			}
+			
+			ul li {
+				list-style-type: none;
+			}
+			
+			a {
+				text-decoration: none;
+			}
+			
+			boby {
+				font-family: "微软雅黑";
+			}
+			
+			.top {
+				width: 100%;
+				height: 350px;
+				/*border: 1px solid cadetblue;*/
+				min-width: 1000px;
+			}
+			
+			.top img {
+				width: 100%;
+				height: 350px;
+			}
+			
+			.top_c {
+				width:600px;
+				height: 100px;
+				/*min-width: 1000px;*/
+				/*border: 1px solid black;*/
+				position: absolute;
+				top: 50px;
+				left: 400px;
+			}
+			
+			.te_t {
+				font-size: 50px;
+				color: #999;
+			}
+			
+			.te_b {
+				font-size: 68px;
+				color: #c40000;
+				font-weight: bold;
+			}
+			
+			.search {
+				width: 600px;
+				height: 45px;
+				/*border: 1px solid firebrick;*/
+				position: absolute;
+				top: 170px;
+				left: 380px;
+			}
+			
+			.icon {
+				width: 20px;
+				height: 20px;
+				background: url(img/无标题.png);
+				position: absolute;
+				top: 13px;
+				left: 10px;
+			}
+			
+			#tx_t {
+				width: 500px;
+				height: 45px;
+				border-radius: 20px;
+				border: 0;
+				padding-left: 40px;
+				color: #999;
+			}
+			
+			#tx_b {
+				width: 90px;
+				height: 45px;
+				border-radius: 0px 20px 20px 0px;
+				border: 0;
+				background: #C40000;
+				color: white;
+				position: absolute;
+				right: 25px;
+				cursor: pointer;
+			}
+			
+			.nav {
+				width: 100%;
+				height: 55px;
+				min-width: 1000px;
+				background-color: #C40000;
+				line-height: 55px;
+			}
+			
+			.navct {
+				width: 60%;
+				height: 54px;
+				min-width: 1000px;
+				margin: 0 auto;
+				text-align: center;
+				cursor: pointer;
+			}
+			
+			.navct>ul>li {
+				float: left;
+				width: 12.5%;
+			}
+			
+			.navct>ul>li>a {
+				color: #FFF;
+				font-size: 18px;
+			}
+			
+			.navct>ul>li:hover {
+				background-color: white;
+			}
+			
+			.navct>ul>li:hover a {
+				color: #C40000;
+			}
+			
+			.con_top {
+				width: 60%;
+				height: 630px;
+				min-width: 1000px;
+				border-bottom: 4px solid #C40000;
+				margin: 0 auto;
+			}
+			
+			.con_top_l {
+				width: 55%;
+				height: 450px;
+				/*border: 1px solid teal;*/
+				float: left;
+			}
+			
+			.con_top_l img {
+				width: 100%;
+				height: 100%;
+			}
+			
+			.con_top_r {
+				width: 44%;
+				height: 450px;
+				/*border: 1px solid darkviolet;*/
+				float: right;
+			}
+			
+			body {
+				background: #eee;
+				font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+				font-size: 14px;
+				color: #000;
+				margin: 0;
+				padding: 0;
+			}
+			
+			.swiper-container {
+				width: 100%;
+				height: 100%;
+			}
+			
+			.swiper-slide {
+				text-align: center;
+				font-size: 18px;
+				background: #fff;
+				/* Center slide text vertically */
+				display: -webkit-box;
+				display: -ms-flexbox;
+				display: -webkit-flex;
+				display: flex;
+				-webkit-box-pack: center;
+				-ms-flex-pack: center;
+				-webkit-justify-content: center;
+				justify-content: center;
+				-webkit-box-align: center;
+				-ms-flex-align: center;
+				-webkit-align-items: center;
+				align-items: center;
+			}
+			
+			.con_top_r ul {
+				padding-top: 29px;
+			}
+			
+			.con_top_r ul li a {
+				font-size: 20px;
+				color: black;
+			}
+			
+			.con_top_r ul li a:hover {
+				color: #C40000;
+			}
+			
+			.con_tc {
+				width: 60%;
+				height: 500px;
+				min-width: 1000px;
+				/*border: 1px solid darkviolet;*/
+				margin: 0 auto;
+			}
+			
+			.con_tc_l {
+				width: 45%;
+				height: 350px;
+				/*border: 1px solid navy;*/
+				float: left;
+			}
+			
+			.con_tc_r {
+				width: 53%;
+				height: 350px;
+				/*border: 1px solid darkcyan;*/
+				float: right;
+			}
+			
+			.con_tc_r_t {
+				width: 100%;
+				height: 150px;
+				/*border: 1px solid darkcyan;*/
+			}
+			
+			.con_tc_r_t_l {
+				width: 37%;
+				height: 150px;
+				/*border: 1px solid gray;*/
+				float: left;
+			}
+			
+			.con_tc_r_t_r {
+				width: 59%;
+				height: 150px;
+				/*border: 1px solid magenta;*/
+				float: right;
+			}
+			
+			.con_tc_r_b {
+				width: 100%;
+				height: 160px;
+				/*border: 1px solid darkgreen;*/
+				margin-top: 38px;
+			}
+			
+			.con_tc_r_b_l {
+				width: 37%;
+				height: 160px;
+				/*border: 1px solid gray;*/
+				float: left;
+			}
+			
+			.con_tc_r_b_r {
+				width: 59%;
+				height: 150px;
+				/*border: 1px solid magenta;*/
+				float: right;
+			}
+			.content_wh{
+				width: 100%;
+				height: 700px;
+				min-width: 1000px;
+				background: #C40000;
+				/*border: 1px solid red;*/
+			}
+			.content_wh img{
+				width: 100%;
+				height: 700px;
+				min-width: 1000px;
+				position: absolute;
+				opacity: 0.8
+			}
+			#con_da{
+				width: 60%;
+				min-width: 1000px;
+				height: 700px;
+				border: 1px solid black;
+				margin: 0 auto;
+			   position: relative;
+			    top: 0;
+			    left: 0;
+			}
+			.con_cc{
+				width: 100%;
+				height: 400px;
+				min-width: 1000px;
+				border: 1px solid royalblue;
+			}
+			.con_cc_sp{
+				width: 48.5%;
+				height: 400px;
+				float: left;
+				border: 1px solid cornflowerblue;
+			}
+			.con_cc_sp video{
+				width: 100%;
+				height: 100%;
+				object-fit: fill;
+			}
+			.con_cc_yb{
+				width: 49%;
+				height: 400px;
+				float: right;
+				border: 1px solid cornflowerblue;
+			}
+			.culture{
+				width: 100%;
+				height: 90px;
+				border: 1px solid blue;
+			}
+			.culture_bot{
+				width: 100%;
+				height: 300px;
+				background: #987D84;
+				margin-top: 5px;
+			}
+			.li_on{
+				float: left;
+				width: 22.8%;
+				height: 90px;
+				line-height: 90px;
+				text-align: center;
+				margin-right: 14px;
+			}
+			.image_main_l{
+				width: 40%;
+				height: 270px;
+				margin: 17px;
+				border: 1px solid blue;
+				float: left;
+			}
+			.image_main_l img{
+				width: 10%;
+				height: 100%;
+				object-fit: fill;
+			}
+			
+			.image_main_r{
+				width: 42%;
+				height: 270px;
+				margin: 17px;
+				float: right;
+				border: 1px solid maroon;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="top">
+			<img src="img/未标题-1.jpg" />
+			<div class="top_c">
+				<a href="#" class="te_t">雄狮苏醒</a>
+				<a href="#" class="te_b">'强国'崛起</a>
+			</div>
+			<div class="search">
+				<i class="icon"></i>
+				<input type="search" name="" id="tx_t" value="" placeholder="请输入关键字" />
+				<input type="button" id="tx_b" value="搜索" />
+			</div>
+		</div>
+		<div class="nav">
+			<div class="navct">
+				<ul>
+					<li style="background: white;">
+						<a href="#" style="color: #C40000;">首页</a>
+					</li>
+					<li>
+						<a href="#">政治建设</a>
+					</li>
+					<li>
+						<a href="#">经济建设</a>
+					</li>
+					<li>
+						<a href="#">文化建设</a>
+					</li>
+					<li>
+						<a href="#">社会建设</a>
+					</li>
+					<li>
+						<a href="#">生态文明建设</a>
+					</li>
+					<li>
+						<a href="#">辉煌成就</a>
+					</li>
+					<li>
+						<a href="#">团队介绍</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="con_top">
+			<p style="padding: 40px 0; font-size: 30px;">政治建设</p>
+			<div class="con_top_l">
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide"><img src="img/timg (1).jpg" /></div>
+						<div class="swiper-slide"><img src="img/12.jpg" /></div>
+						<div class="swiper-slide"><img src="img/timg.jpg" /></div>
+					</div>
+					<div class="swiper-button-next"></div>
+					<div class="swiper-button-prev"></div>
+					<div class="swiper-pagination"></div>
+				</div>
+			</div>
+			<div class="con_top_r">
+				<p>
+					<a href="#" style="font-size: 22px;color: #C40000;">十九大报告的新时代、新征程、新篇章</a>
+				</p>
+				<p style="padding: 17px 0px;color: #999;">2017/10/18</p>
+				<p style="font-size: 20px; color:dimgrey;">
+					这次大会的主题是：不忘初心，牢记使命，高举中国特色社会主义伟大旗帜，决胜全面建成小康社会，夺取新时代中国特色社会主义伟大胜利，为实现中华民族伟大复兴的中国梦不懈奋斗。
+				</p>
+				<ul>
+					<li>
+						<a href="#">&nbsp;&nbsp;"两步走"战略安排的表述</a>
+					</li>
+					<li>
+						<a href="#">&nbsp;&nbsp;"四个伟大"的相互关系</a>
+					</li>
+					<li>
+						<a href="#">我国社会主要矛盾转化的认识和理解</a>
+					</li>
+					<li>
+						<a href="#">中国特色社会主义进入新时代的历史起点和内涵</a>
+					</li>
+					<li>
+						<a href="#">习近平新时代中国特色社会主义思想和基本方略的内在关系</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="con_tc">
+			<p style="padding: 30px 0px 20px 0px; font-size: 30px;">经济建设</p>
+			<div class="con_tc_l">
+				<img src="img/一带一路峰会修2.jpg" style="width: 100%; height: 100%;" />
+			</div>
+			<div class="con_tc_r">
+				<div class="con_tc_r_t">
+					<div class="con_tc_r_t_l">
+						<img src="img/粤港澳大湾区修.jpg" style="width: 100%; height: 100%;" />
+					</div>
+					<div class="con_tc_r_t_r">
+						<p style="font-size: 22px;">粤港澳大湾区</p>
+						<p style="font-size: 15px;">2017年7月1日，习近平出席《深化粤港澳合作 推进大湾区建设框架协议》签署仪式。 2019年2月18日，中共中央、国务院印发《粤港澳大湾区发展规划纲要》。
+						</p>
+					</div>
+				</div>
+				<div class="con_tc_r_b">
+					<div class="con_tc_r_b_l">
+						<img src="img/港珠澳大桥.jpeg" style="width: 100%; height: 100%;" />
+					</div>
+					<div class="con_tc_r_b_r">
+						<p style="font-size: 22px;">中国跨海大桥</p>
+						<p style="font-size: 15px;">
+							于2018年2月6日完成主体工程验收； 于2018年10月24日上午9时开通运营。2018年12月1日起， 首批粤澳非营运小汽车可免加签通行港珠澳大桥跨境段。
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="content_wh">
+			<img src="img/1CB78E3C65844E6C3399A1DAE9475CC6.jpg"/>
+			<div id="con_da">
+				<p style="padding: 30px 0; font-size: 30px; color:#fff;">文化建设</p>
+				<div class="con_cc">
+					<div class="con_cc_sp">
+						<video controls="controls">
+							<source src="img/video1.mp4" type="video/mp4"></source>
+						</video>
+					</div>
+					<div class="con_cc_yb">
+						<div class="culture">
+							<ul id="ulid" style="color: #fff; font-size: 20px;">
+								<li id="one1" onmouseover="setTab('one',1,4)" class="li_on">机关文化</li>
+								<li id="one2" onmouseover="setTab('one',2,4)" class="li_on">民族文化</li>
+								<li id="one3" onmouseover="setTab('one',3,4)" class="li_on">企业文化</li>
+								<li id="one4" onmouseover="setTab('one',4,4)" class="li_on" style="margin-right: 0px;">校园文化</li>
+							</ul>
+						</div>
+						<div class="culture_bot">
+							<div id="con_one_1" class="image_main">
+								<div class="image_main_l">
+									
+								</div>	
+								<div class="image_main_r">
+									
+								</div>
+							</div>
+							<div id="con_one_2" style="display:none" class="image_main">
+								<div class="image_main_l">
+									
+								</div>	
+								<div class="image_main_r">
+									
+								</div>					
+							</div>
+							<div id="con_one_3" style="display:none" class="image_main">
+								<div class="image_main_l">
+									
+								</div>	
+								<div class="image_main_r">
+									
+								</div>			
+							</div>
+							<div id="con_one_4" style="display:none" class="image_main">
+								<div class="image_main_l">
+									
+								</div>	
+								<div class="image_main_r">
+									
+								</div>					
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</body>
+	<script src="js/swiper.min.js"></script>
+
+	<!-- Initialize Swiper -->
+	<script>
+		var swiper = new Swiper('.swiper-container', {
+			loop: true,
+			autoplay: true,
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+			},
+			pagination: {
+				el: '.swiper-pagination',
+				clickable: true,
+			}
+		});
+	</script>
+    <script>
+		/*第一种形式 第二种形式 更换显示样式*/
+		function setTab(name,cursel,n){
+			/*for(i=1;i<=n;i++){
+				var menu=document.getElementById(name+i);
+				var con=document.getElementById("con_"+name+"_"+i);
+				con.style.display=i==cursel?"block":"none";
+			}*/
+		}
+	
+			var change=document.getElementsByClassName("image_main");
+			var icon=document.getElementsByClassName("li_on");
+			var Select=document.getElementById("ulid");
+			var j=1;//设置循环的变量
+			
+	
+			function limg(c){//定义一个函数 控制图片
+				for(var i=0; i<change.length;i++){
+					change[i].style.display="none";
+				}
+				change[c].style.display="block";//显示指定的图片
+			}
+			function licon(c){//定义一个函数 控制li底色
+				for(var i=0; i<icon.length;i++){
+						icon[i].style.background='#987D84';
+				}
+				icon[c].style.background='#754451 ';//当前图标变红	
+			}
+			
+			
+			var timerid = setInterval(run,2000);//设置一个定时器
+			function run(){//循环函数
+				if(j>=4){
+					j=0;
+				}
+				limg(j);//定义一个函数 控制图片
+				licon(j);//定义一个函数 控制图标
+				j++;
+			}
+			//鼠标悬停事件  
+			Select.onmouseover=function(){
+				clearInterval(timerid);//清理定时器	
+			}
+			
+			//鼠标移走事件
+			Select.onmouseout=function(){
+				timerid=setInterval(run,2000);//启动定时器	
+			}
+			
+			//图片绑定对应的图标    给图标绑定事件
+			for(var i=0;i<icon.length;i++){
+				(function(i){
+				icon[i].onmouseover=function(){
+						limg(i);
+						licon(i);
+						j=i+1;//
+					}
+				})(i)	
+			}
+			
+	</script>
 </html>
