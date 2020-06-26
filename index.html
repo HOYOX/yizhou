@@ -4,358 +4,13 @@
 	<head>
 		<meta charset="utf-8" />
 		<title></title>
-		<link rel="stylesheet" type="text/css" href="css/new_file.css" />
 		<link rel="stylesheet" type="text/css" href="css/swiper.min.css" />
-		<style type="text/css">
-			* {
-				margin: 0 0;
-				padding: 0 0;
-			}
-			
-			ul li {
-				list-style-type: none;
-			}
-			
-			a {
-				text-decoration: none;
-			}
-			
-			boby {
-				font-family: "微软雅黑";
-			}
-			
-			.top {
-				width: 100%;
-				height: 350px;
-				/*border: 1px solid cadetblue;*/
-				min-width: 1000px;
-			}
-			
-			.top img {
-				width: 100%;
-				height: 350px;
-			}
-			
-			.top_c {
-				width:600px;
-				height: 100px;
-				/*min-width: 1000px;*/
-				/*border: 1px solid black;*/
-				position: absolute;
-				top: 50px;
-				left: 400px;
-			}
-			
-			.te_t {
-				font-size: 50px;
-				color: #999;
-			}
-			
-			.te_b {
-				font-size: 68px;
-				color: #c40000;
-				font-weight: bold;
-			}
-			
-			.search {
-				width: 600px;
-				height: 45px;
-				/*border: 1px solid firebrick;*/
-				position: absolute;
-				top: 170px;
-				left: 380px;
-			}
-			
-			.icon {
-				width: 20px;
-				height: 20px;
-				background: url(img/无标题.png);
-				position: absolute;
-				top: 13px;
-				left: 10px;
-			}
-			
-			#tx_t {
-				width: 500px;
-				height: 45px;
-				border-radius: 20px;
-				border: 0;
-				padding-left: 40px;
-				color: #999;
-			}
-			
-			#tx_b {
-				width: 90px;
-				height: 45px;
-				border-radius: 0px 20px 20px 0px;
-				border: 0;
-				background: #C40000;
-				color: white;
-				position: absolute;
-				right: 25px;
-				cursor: pointer;
-			}
-			
-			.nav {
-				width: 100%;
-				height: 55px;
-				min-width: 1000px;
-				background-color: #C40000;
-				line-height: 55px;
-			}
-			
-			.navct {
-				width: 60%;
-				height: 54px;
-				min-width: 1000px;
-				margin: 0 auto;
-				text-align: center;
-				cursor: pointer;
-			}
-			
-			.navct>ul>li {
-				float: left;
-				width: 12.5%;
-			}
-			
-			.navct>ul>li>a {
-				color: #FFF;
-				font-size: 18px;
-			}
-			
-			.navct>ul>li:hover {
-				background-color: white;
-			}
-			
-			.navct>ul>li:hover a {
-				color: #C40000;
-			}
-			
-			.con_top {
-				width: 60%;
-				height: 630px;
-				min-width: 1000px;
-				border-bottom: 4px solid #C40000;
-				margin: 0 auto;
-			}
-			
-			.con_top_l {
-				width: 55%;
-				height: 450px;
-				/*border: 1px solid teal;*/
-				float: left;
-			}
-			
-			.con_top_l img {
-				width: 100%;
-				height: 100%;
-			}
-			
-			.con_top_r {
-				width: 44%;
-				height: 450px;
-				/*border: 1px solid darkviolet;*/
-				float: right;
-			}
-			
-			body {
-				background: #eee;
-				font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-				font-size: 14px;
-				color: #000;
-				margin: 0;
-				padding: 0;
-			}
-			
-			.swiper-container {
-				width: 100%;
-				height: 100%;
-			}
-			
-			.swiper-slide {
-				text-align: center;
-				font-size: 18px;
-				background: #fff;
-				/* Center slide text vertically */
-				display: -webkit-box;
-				display: -ms-flexbox;
-				display: -webkit-flex;
-				display: flex;
-				-webkit-box-pack: center;
-				-ms-flex-pack: center;
-				-webkit-justify-content: center;
-				justify-content: center;
-				-webkit-box-align: center;
-				-ms-flex-align: center;
-				-webkit-align-items: center;
-				align-items: center;
-			}
-			
-			.con_top_r ul {
-				padding-top: 29px;
-			}
-			
-			.con_top_r ul li a {
-				font-size: 20px;
-				color: black;
-			}
-			
-			.con_top_r ul li a:hover {
-				color: #C40000;
-			}
-			
-			.con_tc {
-				width: 60%;
-				height: 500px;
-				min-width: 1000px;
-				/*border: 1px solid darkviolet;*/
-				margin: 0 auto;
-			}
-			
-			.con_tc_l {
-				width: 45%;
-				height: 350px;
-				/*border: 1px solid navy;*/
-				float: left;
-			}
-			
-			.con_tc_r {
-				width: 53%;
-				height: 350px;
-				/*border: 1px solid darkcyan;*/
-				float: right;
-			}
-			
-			.con_tc_r_t {
-				width: 100%;
-				height: 150px;
-				/*border: 1px solid darkcyan;*/
-			}
-			
-			.con_tc_r_t_l {
-				width: 37%;
-				height: 150px;
-				/*border: 1px solid gray;*/
-				float: left;
-			}
-			
-			.con_tc_r_t_r {
-				width: 59%;
-				height: 150px;
-				/*border: 1px solid magenta;*/
-				float: right;
-			}
-			
-			.con_tc_r_b {
-				width: 100%;
-				height: 160px;
-				/*border: 1px solid darkgreen;*/
-				margin-top: 38px;
-			}
-			
-			.con_tc_r_b_l {
-				width: 37%;
-				height: 160px;
-				/*border: 1px solid gray;*/
-				float: left;
-			}
-			
-			.con_tc_r_b_r {
-				width: 59%;
-				height: 150px;
-				/*border: 1px solid magenta;*/
-				float: right;
-			}
-			.content_wh{
-				width: 100%;
-				height: 700px;
-				min-width: 1000px;
-				background: #C40000;
-				/*border: 1px solid red;*/
-			}
-			.content_wh img{
-				width: 100%;
-				height: 700px;
-				min-width: 1000px;
-				position: absolute;
-				opacity: 0.8
-			}
-			#con_da{
-				width: 60%;
-				min-width: 1000px;
-				height: 700px;
-				border: 1px solid black;
-				margin: 0 auto;
-			   position: relative;
-			    top: 0;
-			    left: 0;
-			}
-			.con_cc{
-				width: 100%;
-				height: 400px;
-				min-width: 1000px;
-				border: 1px solid royalblue;
-			}
-			.con_cc_sp{
-				width: 48.5%;
-				height: 400px;
-				float: left;
-				border: 1px solid cornflowerblue;
-			}
-			.con_cc_sp video{
-				width: 100%;
-				height: 100%;
-				object-fit: fill;
-			}
-			.con_cc_yb{
-				width: 49%;
-				height: 400px;
-				float: right;
-				border: 1px solid cornflowerblue;
-			}
-			.culture{
-				width: 100%;
-				height: 90px;
-				border: 1px solid blue;
-			}
-			.culture_bot{
-				width: 100%;
-				height: 300px;
-				background: #987D84;
-				margin-top: 5px;
-			}
-			.li_on{
-				float: left;
-				width: 22.8%;
-				height: 90px;
-				line-height: 90px;
-				text-align: center;
-				margin-right: 14px;
-			}
-			.image_main_l{
-				width: 40%;
-				height: 270px;
-				margin: 17px;
-				border: 1px solid blue;
-				float: left;
-			}
-			.image_main_l img{
-				width: 10%;
-				height: 100%;
-				object-fit: fill;
-			}
-			
-			.image_main_r{
-				width: 42%;
-				height: 270px;
-				margin: 17px;
-				float: right;
-				border: 1px solid maroon;
-			}
-		</style>
+		<link rel="stylesheet" type="text/css" href="css/new_file.css"/>
+
 	</head>
 
 	<body>
+		       <!--头部-->
 		<div class="top">
 			<img src="img/未标题-1.jpg" />
 			<div class="top_c">
@@ -368,6 +23,7 @@
 				<input type="button" id="tx_b" value="搜索" />
 			</div>
 		</div>
+		        <!--导航栏-->
 		<div class="nav">
 			<div class="navct">
 				<ul>
@@ -398,6 +54,8 @@
 				</ul>
 			</div>
 		</div>
+		
+		            <!--政治建设-->
 		<div class="con_top">
 			<p style="padding: 40px 0; font-size: 30px;">政治建设</p>
 			<div class="con_top_l">
@@ -439,6 +97,8 @@
 				</ul>
 			</div>
 		</div>
+		
+		         <!--经济建设-->
 		<div class="con_tc">
 			<p style="padding: 30px 0px 20px 0px; font-size: 30px;">经济建设</p>
 			<div class="con_tc_l">
@@ -468,8 +128,10 @@
 				</div>
 			</div>
 		</div>
+		
+		         <!--文化建设-->
 		<div class="content_wh">
-			<img src="img/1CB78E3C65844E6C3399A1DAE9475CC6.jpg"/>
+			<img class="bj" src="img/1CB78E3C65844E6C3399A1DAE9475CC6.jpg"/>
 			<div id="con_da">
 				<p style="padding: 30px 0; font-size: 30px; color:#fff;">文化建设</p>
 				<div class="con_cc">
@@ -489,40 +151,173 @@
 						</div>
 						<div class="culture_bot">
 							<div id="con_one_1" class="image_main">
-								<div class="image_main_l">
-									
-								</div>	
-								<div class="image_main_r">
-									
+								<div class="main_lr">
+									<div class="main_l">
+									    <img src="img/timg6_副本.jpg"/>
+									</div>
+									<div class="main_r">
+									<ul>
+										<li><a href="#">整体行为文化</a></li>
+										<li><a href="#">个人行为文化</a></li>
+										<li><a href="#">群体意识文化</a></li>
+										<li><a href="#">行为规范文化</a></li>
+										<li><a href="#">精神风貌文化</a></li>						
+									</ul>		
 								</div>
 							</div>
-							<div id="con_one_2" style="display:none" class="image_main">
-								<div class="image_main_l">
-									
-								</div>	
-								<div class="image_main_r">
-									
-								</div>					
-							</div>
-							<div id="con_one_3" style="display:none" class="image_main">
-								<div class="image_main_l">
-									
-								</div>	
-								<div class="image_main_r">
-									
-								</div>			
-							</div>
-							<div id="con_one_4" style="display:none" class="image_main">
-								<div class="image_main_l">
-									
-								</div>	
-								<div class="image_main_r">
-									
-								</div>					
-							</div>
+						</div>
+						<div id="con_one_2" style="display:none" class="image_main">
+							<div class="main_lr">
+									<div class="main_l">
+									    <img src="img/timg1.jpg"/>
+									</div>
+									<div class="main_r">
+									<ul>
+										<li><a href="#">尊重文化</a></li>
+										<li><a href="#">保护文化</a></li>
+										<li><a href="#">弘扬文化</a></li>
+										<li><a href="#">传承文化</a></li>
+										<li><a href="#">创新文化</a></li>						
+									</ul>		
+								</div>
+							</div>						
+						</div>
+						<div id="con_one_3" style="display:none" class="image_main">
+							<div class="main_lr">
+									<div class="main_l">
+									    <img src="img/timg3.jpg"/>
+									</div>
+									<div class="main_r">
+									<ul>
+										<li><a href="#">宣传文化</a></li>
+										<li><a href="#">教育文化</a></li>
+										<li><a href="#">培训文化</a></li>
+										<li><a href="#">娱乐文化</a></li>
+										<li><a href="#">文心联谊文化</a></li>						
+									</ul>		
+								</div>
+							</div>			
+						</div>
+						<div id="con_one_4" style="display:none" class="image_main">
+							<div class="main_lr">
+									<div class="main_l">
+									    <img src="img/timg4.jpg"/>
+									</div>
+									<div class="main_r">
+									<ul>
+										<li><a href="#">学风文化</a></li>
+										<li><a href="#">校风文化</a></li>
+										<li><a href="#">人际文化</a></li>
+										<li><a href="#">学校传统文化</a></li>
+										<li><a href="#">集体舆论文化</a></li>						
+									</ul>		
+								</div>
+							</div>				
 						</div>
 					</div>
 				</div>
+				</div>
+				<div class="cc_bott">
+					<div class="bo_cc">
+						<img src="img/精神文化.jpg"/>
+						<div class="blac_k">
+							精神文化
+						</div>
+					</div>
+					<div class="bo_cc">
+						<img src="img/行为文化.jpg"/>
+						<div class="blac_k">
+							行为文化
+						</div>
+					</div>
+					<div class="bo_cc">
+						<img src="img/心理文化.jpg"/>
+						<div class="blac_k">
+							心理文化
+						</div>
+					</div>
+					<div class="bo_cc" style="margin-right: 0px;">
+						<img src="img/艺术文化.jpg"/>
+						<div class="blac_k">
+							艺术文化
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!--社会建设-->
+		<div class="content_sh">
+			<p style="padding: 40px 0; font-size: 30px;">社会建设</p>
+			<div class="sh_l">
+				<div class="sh_s_lr">
+					<div class="sh_s_l">
+						<p style="padding: 5px 0px; font-size: 22px;">支付宝 第三方支付平台</p>
+						<p style=" font-size: 16px;">支付宝（中国）网络技术有限公司, 是国内的第三方支付平台，致力于提供“简单、安全、快速”的支付解决方案。支付宝公司从2004年建立开始，始终以“信任”作为产品和服务的核心。</p>
+					</div>
+					<div class="sh_s_r">
+						<img src="img/支付宝.jpg" style="width: 100%; height: 100%;"/>
+					</div>
+				</div>
+				<div class="sh_x_lr">
+					<div class="sh_x_l">
+						<p style="padding: 5px 0px; font-size: 22px;">全民共享“健康红利</p>
+						<p style=" font-size: 16px;">“就诊更方便了，药价更便宜了，服务更贴心了。”这是新疆库车县各族群众现在看病就医后的普遍感受，也是我国医疗改革深入基层、“健康中国”建设有序开展的真实写照。</p>
+					</div>
+					<div class="sh_x_r">
+						<img src="img/全民共享“健康红利”.jpg" style="width: 100%; height: 100%;"/>
+					</div>
+				</div>
+			</div>
+			<div class="sh_r">
+				<img src="img/精准扶贫.jpg" style="width: 100%; height: 100%;"/>
+			</div>
+		</div>
+		
+		<!--生态建设-->
+		<div class="st">
+			<p style="padding: 35px 0; font-size: 30px;">生态建设</p>
+			<div class="hh_img">
+				<img src="img/红海滩.png" width="100%" height="100%"/>
+			</div>
+			<div class="hh">
+				<p style="font-size: 22px;">红海滩</p>
+				<p style="padding: 7px 0px; font-size: 16px; color:dimgray">世界最大的滨海芦苇湿地</p>
+				<p style="padding: 7px 0px; font-size: 16px;">辽河口红海滩</p>
+				<p style=" font-size: 16px; text-indent: 2em; line-height: 30px; color:dimgray">盘锦是世界上最大的滨海芦苇湿地，碧波荡漾的苇海、纵横交错的水道构成了辽阔、幽深、曲折多种形态的水面和陆上芦苇空间，宛若一个个曲径通幽的水上迷宫。
+					漫步塘边或泛舟苇海，凉风拂面，苇香扑鼻，令人流连忘返。 </p>
+			</div>
+		</div>
+		<div class="dq">
+			<div class="wz">
+				<p style="font-size: 22px;">地球卫士</p>
+				<p style="padding: 7px 0px; font-size: 16px; color:dimgray">塞罕坝人工林</p>
+				<p style="padding: 7px 0px; font-size: 16px;">三代人的成果</p>
+				<p style=" font-size: 16px; text-indent: 2em; line-height: 30px; color:dimgray">所用种苗或其他繁殖材料是经过人为选择和培育的，遗传品质良好，适应性强；
+					 树木个体生长整齐，郁闭成林后个体分化程度相对较小，林木生长竞争比较激烈； 林地从造林之初就处于人为控制下，能适应林木生长的需要。
+					我国人工林达6933万公顷，居世界第一位。重要的人工林树种有桉树、泓森槐、马尾松、杉树等。</p>
+			</div>
+			<div class="dq_img">
+				<img src="img/地球卫士.png" width="100%" height="100%"/>
+			</div>
+		</div>
+		<div class="hhs">
+			<div class="hhs_img">
+				<img src="img/活化石.png" width="100%" height="100%"/>
+			</div>
+			<div class="hhs_wz">
+				<p style="font-size: 22px;">活化石</p>
+				<p style="padding: 7px 0px; font-size: 16px; color:dimgray">一级保护动物</p>
+				<p style="padding: 7px 0px; font-size: 16px;">中国国宝</p>
+				<p style=" font-size: 16px; text-indent: 2em; line-height: 30px; color:dimgray">
+				大熊猫,俗称花熊、竹熊。国家一级保护动物,被誉为国宝。大熊猫是举世闻名的动物"明星",因为在地球上它比人类还古老,被称为"活化石"。
+				现在仅幸存于中国6块相互隔离的山岭中,现存总数1600只左右。大熊猫在中国秦岭地区的分布有着悠久的历史,距今已有70万年左右。</p>
+			</div>
+		</div>
+		<div class="bottem">
+			<div class="bott_wz">
+				Copyright © 2015 - 2019 广西梧州市梧州职业学院</br>
+				制作单位：梧州市梧州职业学院      版权所属：梧州市梧州职业学院 
 			</div>
 		</div>
 

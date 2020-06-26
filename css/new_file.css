@@ -1,1 +1,630 @@
-
+			* {
+				margin: 0 0;
+				padding: 0 0;
+			}
+			
+			ul li {
+				list-style-type: none;
+			}
+			
+			a {
+				text-decoration: none;
+			}
+			
+			boby {
+				font-family: "微软雅黑";
+			}
+			
+			/*头部*/
+			.top {
+				width: 100%;
+				height: 350px;
+				/*border: 1px solid cadetblue;*/
+				min-width: 1000px;
+			}
+			
+			.top img {
+				width: 100%;
+				height: 350px;
+			}
+			
+			.top_c {
+				width:600px;
+				height: 100px;
+				/*min-width: 1000px;*/
+				/*border: 1px solid black;*/
+				position: absolute;
+				top: 50px;
+				left: 400px;
+			}
+			
+			.te_t {
+				font-size: 50px;
+				color: #999;
+			}
+			
+			.te_b {
+				font-size: 68px;
+				color: #c40000;
+				font-weight: bold;
+			}
+			
+			.search {
+				width: 600px;
+				height: 45px;
+				/*border: 1px solid firebrick;*/
+				position: absolute;
+				top: 170px;
+				left: 380px;
+			}
+			
+			.icon {
+				width: 20px;
+				height: 20px;
+				background: url(img/无标题.png);
+				position: absolute;
+				top: 13px;
+				left: 10px;
+			}
+			
+			#tx_t {
+				width: 500px;
+				height: 45px;
+				border-radius: 20px;
+				border: 0;
+				padding-left: 40px;
+				color: #999;
+			}
+			
+			#tx_b {
+				width: 90px;
+				height: 45px;
+				border-radius: 0px 20px 20px 0px;
+				border: 0;
+				background: #C40000;
+				color: white;
+				position: absolute;
+				right: 25px;
+				cursor: pointer;
+			}
+			
+			/*导航栏*/
+			.nav {
+				width: 100%;
+				height: 55px;
+				min-width: 1000px;
+				background-color: #C40000;
+				line-height: 55px;
+			}
+			
+			.navct {
+				width: 60%;
+				height: 54px;
+				min-width: 1000px;
+				margin: 0 auto;
+				text-align: center;
+				cursor: pointer;
+			}
+			
+			.navct>ul>li {
+				float: left;
+				width: 12.5%;
+			}
+			
+			.navct>ul>li>a {
+				color: #FFF;
+				font-size: 18px;
+			}
+			
+			.navct>ul>li:hover {
+				background-color: white;
+			}
+			
+			.navct>ul>li:hover a {
+				color: #C40000;
+			}
+			
+			/*政治建设*/
+			.con_top {
+				width: 60%;
+				height: 630px;
+				min-width: 1000px;
+				border-bottom: 4px solid #C40000;
+				margin: 0 auto;
+			}
+			
+			.con_top_l {
+				width: 55%;
+				height: 450px;
+				/*border: 1px solid teal;*/
+				float: left;
+			}
+			
+			.con_top_l img {
+				width: 100%;
+				height: 100%;
+			}
+			
+			.con_top_r {
+				width: 44%;
+				height: 450px;
+				/*border: 1px solid darkviolet;*/
+				float: right;
+			}
+			
+			body {
+				background: #eee;
+				font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+				font-size: 14px;
+				color: #000;
+				margin: 0;
+				padding: 0;
+			}
+			
+			.swiper-container {
+				width: 100%;
+				height: 100%;
+			}
+			
+			.swiper-slide {
+				text-align: center;
+				font-size: 18px;
+				background: #fff;
+				/* Center slide text vertically */
+				display: -webkit-box;
+				display: -ms-flexbox;
+				display: -webkit-flex;
+				display: flex;
+				-webkit-box-pack: center;
+				-ms-flex-pack: center;
+				-webkit-justify-content: center;
+				justify-content: center;
+				-webkit-box-align: center;
+				-ms-flex-align: center;
+				-webkit-align-items: center;
+				align-items: center;
+			}
+			
+			.con_top_r>ul {
+				padding-top: 29px;
+			}
+			
+			.con_top_r>ul>li a {
+				font-size: 20px;
+				color: black;
+			}
+			
+			.main_r>ul>li a:hover{
+				color: #C40000;
+			}
+			
+			/*经济建设*/
+			.con_tc {
+				width: 60%;
+				height: 500px;
+				min-width: 1000px;
+				/*border: 1px solid darkviolet;*/
+				margin: 0 auto;
+			}
+			
+			.con_tc_l {
+				width: 45%;
+				height: 350px;
+				/*border: 1px solid navy;*/
+				float: left;
+			}
+			
+			.con_tc_r {
+				width: 53%;
+				height: 350px;
+				/*border: 1px solid darkcyan;*/
+				float: right;
+			}
+			
+			.con_tc_r_t {
+				width: 100%;
+				height: 150px;
+				/*border: 1px solid darkcyan;*/
+			}
+			
+			.con_tc_r_t_l {
+				width: 37%;
+				height: 150px;
+				/*border: 1px solid gray;*/
+				float: left;
+			}
+			
+			.con_tc_r_t_r {
+				width: 59%;
+				height: 150px;
+				/*border: 1px solid magenta;*/
+				float: right;
+			}
+			
+			.con_tc_r_b {
+				width: 100%;
+				height: 160px;
+				/*border: 1px solid darkgreen;*/
+				margin-top: 38px;
+			}
+			
+			.con_tc_r_b_l {
+				width: 37%;
+				height: 160px;
+				/*border: 1px solid gray;*/
+				float: left;
+			}
+			
+			.con_tc_r_b_r {
+				width: 59%;
+				height: 150px;
+				/*border: 1px solid magenta;*/
+				float: right;
+			}
+			
+			/*文化建设*/
+			.content_wh{
+				width: 100%;
+				height: 700px;
+				min-width: 1000px;
+				background: #C40000;
+				/*border: 1px solid red;*/
+			}
+			.bj{
+				width: 100%;
+				height:700px;
+				min-width: 1000px;
+				position: absolute;
+				opacity: 0.8
+			}
+			#con_da{
+				width: 60%;
+				min-width: 1000px;
+				height: 700px;
+				/*border: 1px solid black;*/
+				margin: 0 auto;
+			   position: relative;
+			    top: 0;
+			    left: 0;
+			}
+			.con_cc{
+				width: 100%;
+				height: 400px;
+				min-width: 1000px;
+				/*border: 1px solid royalblue;*/
+			}
+			.con_cc_sp{
+				width: 48.5%;
+				height: 400px;
+				float: left;
+				/*border: 1px solid cornflowerblue;*/
+			}
+			.con_cc_sp video{
+				width: 100%;
+				height: 100%;
+				object-fit: fill;
+			}
+			.con_cc_yb{
+				width: 49%;
+				height: 400px;
+				float: right;
+				/*border: 1px solid cornflowerblue;*/
+			}
+			.culture{
+				width: 100%;
+				height: 90px;
+				/*border: 1px solid blue;*/
+			}
+			.culture_bot{
+				width: 100%;
+				height: 300px;
+				background: #987D84;
+				margin-top: 4px;
+			}
+			.li_on{
+				float: left;
+				width: 22.8%;
+				height: 90px;
+				line-height: 90px;
+				text-align: center;
+				margin-right: 14px;
+				cursor: pointer;
+			}
+			.main_lr{
+				width: 100%;
+				height: 300px;
+				/*border: 1px solid black;*/
+			}
+			.main_l{
+				width: 42%;
+				height: 260px;
+				float: left;
+				/*border: 1px solid violet;*/
+				margin: 16px;
+			}
+			.main_l img{
+				width: 100%;
+				height: 100%;
+			}
+			.main_r{
+				width: 44%;
+				height: 260px;
+				/*border: 1px solid violet;*/
+				margin: 16px;
+				float: right;
+			}	
+			.main_r>ul>li{
+				padding: 15px 30px;
+			}
+			.main_r>ul>li a{
+				color: #fff;
+				font-size: 16px;
+			}
+			.cc_bott{
+				width:100%;
+				height:150px;
+				margin-top: 17px;
+				/*border:1px solid black;*/
+			}
+			.bo_cc{
+				width:24%;
+				height:150px;
+				float: left;
+				/*border:1px solid black;*/
+				margin-right: 13px;
+				position:relative;
+			}
+			.bo_cc img{
+				width: 100%;
+				height: 100%;
+			}
+			.blac_k{
+				width: 100%;
+				height: 57px;
+				background: rgba(0,0,0,0.8);
+				position: absolute;
+				bottom: 0px;
+				cursor: pointer;
+				line-height: 57px;
+				color: #fff;
+				text-align: center;
+				font-size: 20px;
+			}
+			
+				/*社会建设*/
+			.content_sh{
+				width: 63%;
+				height: 550px;
+				min-width: 1000px;
+				border-bottom: 4px solid red;
+				margin: 0 auto;
+			}
+			.sh_l{
+				width: 57%;
+				height: 378px;
+				float: left;
+			}
+			.sh_s_lr{
+			    width: 100%;
+				height: 165px;
+			}
+			.sh_s_l{
+				width: 52%;
+				height: 165px;
+				float: left;
+			}
+			.sh_s_r{
+				width: 40%;
+				height: 165px;
+				float: right;
+			}
+			.sh_x_lr{
+				width: 100%;
+				height: 165px;
+				margin-top: 42px;
+			}
+			.sh_x_l{
+				width: 52%;
+				height: 165px;
+				float: left;
+			}
+			.sh_x_r{
+				width: 40%;
+				height: 165px;
+				float: right;
+			}
+			.sh_r{
+				width: 40%;
+				height: 378px;
+				float: right;
+			}
+			
+			/*生态文明建设*/
+			.st{
+				width: 63%;
+				height: 450px;
+				min-width: 1000px;
+				margin: 0 auto;
+			}
+			.hh_img{
+				width: 49.3%;
+				height: 290px;
+				float: left;
+			}
+			.hh{
+				width: 49%;
+				height: 290px;
+				float: right;
+			}
+			.dq{
+				width: 63%;
+				height: 340px;
+				min-width: 1000px;
+				margin: 0 auto;
+			}
+			.wz{
+				width: 49.3%;
+				height: 290px;
+				float: left;
+			}
+			.dq_img{
+				width: 49%;
+				height: 290px;
+				float: right;
+			}
+			.hhs{
+				width: 63%;
+				height: 400px;
+				min-width: 1000px;
+				margin: 0 auto;
+			}
+			.hhs_img{
+				width: 49.3%;
+				height: 290px;
+				float: left;
+			}
+			.hhs_wz{
+				width: 49%;
+				height: 290px;
+				float: right;
+			}
+			
+			/*底部*/
+			.bottem{
+				width: 100%;
+				height: 100px;
+				min-width: 1000px;
+				background: #000000;
+				padding-top: 28px;
+			}
+			.bott_wz{
+				width: 45%;
+				min-width: 1000px;
+				height: 60px;
+				margin: 0 auto;
+				text-align: center;
+				color: #fff;
+				font-size: 16px;
+			}
+			
+			/*社会建设*/
+			.content_sh{
+				width: 63%;
+				height: 550px;
+				min-width: 1000px;
+				border-bottom: 4px solid red;
+				margin: 0 auto;
+			}
+			.sh_l{
+				width: 57%;
+				height: 378px;
+				/*border: 1px solid royalblue;*/
+				float: left;
+			}
+			.sh_s_lr{
+			    width: 100%;
+				height: 165px;
+				/*border: 1px solid blue;*/
+			}
+			.sh_s_l{
+				width: 52%;
+				height: 165px;
+				float: left;
+				/*border: 1px solid darkviolet;*/
+			}
+			.sh_s_r{
+				width: 40%;
+				height: 165px;
+				float: right;
+				/*border: 1px solid darkviolet;*/
+			}
+			.sh_x_lr{
+				width: 100%;
+				height: 165px;
+				margin-top: 42px;
+				/*border: 1px solid darkgoldenrod;*/
+			}
+			.sh_x_l{
+				width: 52%;
+				height: 165px;
+				float: left;
+			}
+			.sh_x_r{
+				width: 40%;
+				height: 165px;
+				float: right;
+			}
+			.sh_r{
+				width: 40%;
+				height: 378px;
+				float: right;
+			}
+			
+			/*生态文明建设*/
+			.st{
+				width: 63%;
+				height: 450px;
+				min-width: 1000px;
+				margin: 0 auto;
+			}
+			.hh_img{
+				width: 49.3%;
+				height: 290px;
+				float: left;
+			}
+			.hh{
+				width: 49%;
+				height: 290px;
+				float: right;
+			}
+			.dq{
+				width: 63%;
+				height: 340px;
+				min-width: 1000px;
+				margin: 0 auto;
+			}
+			.wz{
+				width: 49.3%;
+				height: 290px;
+				float: left;
+			}
+			.dq_img{
+				width: 49%;
+				height: 290px;
+				float: right;
+			}
+			.hhs{
+				width: 63%;
+				height: 400px;
+				min-width: 1000px;
+				margin: 0 auto;
+			}
+			.hhs_img{
+				width: 49.3%;
+				height: 290px;
+				float: left;
+			}
+			.hhs_wz{
+				width: 49%;
+				height: 290px;
+				float: right;
+			}
+			
+			/*底部*/
+			.bottem{
+				width: 100%;
+				height: 100px;
+				min-width: 1000px;
+				background: #000000;
+				padding-top: 50px;
+			}
+			.bott_wz{
+				width: 45%;
+				min-width: 1000px;
+				height: 60px;
+				margin: 0 auto;
+				text-align: center;
+				color: #fff;
+				font-size: 16px;
+			}
+			
